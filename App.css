@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Hexenkotel';
+  src: url('/fonts/Hexenkotel-7Op7B.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Glitch';
+  src: url('/fonts/LoveGlitchPersonalUseRegular-vmEyA.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Moonhouse';
+  src: url('/fonts/Moonhouse-yE5M.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SuperPixel';
+  src: url('/fonts/SuperPixel-m2L8j.woff2') format('woff2');
+}
+
+.header {
+  width: 100vw; /* Full width */
+  height: 70px;
+  background-color: rgba(8, 8, 8, 0.312);
+  color: #ffffff;
+  position: fixed; /* Keeps it at the top */
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+
+.hello {
+  font-family:'Glitch';
+  font-size: 18px;
+  position: absolute;
+  left: 5%;
+  top: -40%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  font-family: 'Hexenkotel';
+  font-size: 35px;
+  position: absolute;
+  left: 5%;
+  top: -15%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  position:absolute;
+  display: flex;
+  color:#99cb8c;
+  font-family:'Glitch';
+  font-size: 18px;
+  left: 5%;
+  top: 39%;
+  transform: translateX(-50%);
+}
+.login{
+  border: none;
+  outline: none;
+  z-index: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  /*background-color: #ff3838;*/
+  color:rgb(255, 255, 255);
+  margin-left: 1200px;
+  box-shadow: 0 0 5px 1px #fce8d3;
+  margin-top: 15px;
+  position:absolute;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+.login::before
+{
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000);
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.login:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.login:hover {
+  transition: .2s all;
+  filter: blur(0px);
+  filter: brightness(0.2px);
+  box-shadow: 0 0 12px 2px #fce8d3;
+}
+.register{
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  width: 80px;
+  height: 40px;
+  border-color: aliceblue;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color:black;
+  margin-left: 1300px;
+  box-shadow: 0 0 5px 1px #fce8d3;
+  margin-top: 15px;
+  position:absolute;
+  display: block;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+.register:hover{
+  transition: .2s all;
+  filter: blur(0px);
+  filter: brightness(0.2px);
+  box-shadow: 0 0 12px 2px #fce8d3;
+}
+.infogroup{
+  top: 20%;
+  left: 4%;
+  position: absolute;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #383636;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-left: 550px;
+  margin-top: 12px;
+  width: 350px;
+  height: 36px;
+}
+.search-container:hover{
+  background-color: rgba(255, 255, 255, 0.218);
+}
+
+.search-icon {
+  color: #b0b0b0;
+  margin-right: 8px;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+
+.container {
+  display: flex; /* Ensures cards are placed next to each other */
+  flex-wrap: wrap;
+  justify-content: center ;
+  gap: 1cm; /* Creates 3 cm spacing between each card */
+  position: absolute; /* Ensures the whole container is positioned */
+  top: 2.5in; /* Moves the entire row 2 inches from the top */
+  left: 0.5cm; /* Moves the container 5 cm from the left */
+  width: fit-content; 
+}
+.card {
+  /*background-image: url('./assets/Dark_Magician_Girl.jpg');*/
+  background-size:160%; /* Ensures the image scales to cover the card */
+  background-position:center 40%; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+
+  user-select: none;
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+  border: 1px solid #ffffff22;
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: .7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: .5s all;
+  position: relative; /* Ensures ::before is positioned relative to .card */
+  cursor: pointer;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  box-shadow: 0 0 100px 40px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  width: 100%;
+  transition: .2s all;
+}
+
+.card:hover {
+  transition: .2s all;
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.015);
+  filter: blur(0px);
+  filter: brightness(0.2px);
+  box-shadow: 0 0 27px 2px #fce8d3;}
+
+/*.button {
+  border-color:rgb(252, 228, 167);
+  font-size: 10px;
+  font-family: 'SuperPixel';
+  color: rgb(235, 231, 231);
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#fedb66, #715b28);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  transition: box-shadow 0.1s ease-in-out;
+  cursor: pointer;
+}*/
+/* 
+.button:hover {
+  box-shadow: 0px 0px 15px 5px rgba(248, 224, 116, 0.8);
+}*/
