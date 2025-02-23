@@ -1,2 +1,2 @@
 My best looking site so far
-<img width="1435" alt="Screenshot 2025-02-22 at 19 58 50" src="https://github.com/user-attachments/assets/fb0ff52d-ea13-4feb-9ea1-686a86540f75" />
+<img width="1425" alt="Screenshot 2025-02-23 at 19 52 22" src="https://github.com/user-attachments/assets/adc35705-155f-4c54-9291-a09d5b2cd2e8" />
